@@ -17,11 +17,9 @@ def sieve(max)
 
     break if p*p > max
     counter += 1
-    # that value with nil in the primes array
     (p*p).step(max,p) { |m| primes[m] = nil }
   end
 
-  # Finally, return the compacted array.
   puts "Solved for #{max} in #{counter} steps."
   primes.compact
 end
