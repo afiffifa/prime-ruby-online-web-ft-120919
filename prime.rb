@@ -8,8 +8,7 @@ puts Benchmark.measure { BigMath.PI(10_000) }
 def sieve(max)
   primes = (0..max).to_a
 
-  # Set both the first and second positions (i.e., 0 and 1) to nil, as they
-  # aren't prime.
+
   primes[0] = primes[1] = nil
 
   # Iterate through primes array
